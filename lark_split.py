@@ -13,6 +13,7 @@ import re
 # - "*" matches any sequence of characters (non-empty)
 # - "@" matches any vowel (including Y)
 # - "#" matches any consonant (excluding Y)
+# - "/abc" matches an anagram of the letters that follow
 grammar = r"""
     start: expr+ -> start
 
